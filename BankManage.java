@@ -1,7 +1,7 @@
 public class BankManage
   {
-   public static void main(Stirng[] args)
+   public static void main(String[] args)
     {
-      System.out.prinln("Under Developmnet");
+      System.out.println("Under Developmnet");
     }
   }
