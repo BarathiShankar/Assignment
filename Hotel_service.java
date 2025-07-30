@@ -15,7 +15,7 @@ public static int[] rooms={1,2,3,4,5,6,7,8,9,10};
 		System.out.print("Enter customer's name : ");
 		name=s.nextLine();
 		System.out.print("Enter customer's phone number : ");
-		phn=s.nextInt();
+		phn=s.nextDouble();
 		System.out.print("Enter stay hours : ");
 		stay_time=s.nextFloat();
 		if(stay_time<=24) cost=3000;
@@ -31,6 +31,9 @@ public static int[] rooms={1,2,3,4,5,6,7,8,9,10};
        rooms[i]=0;
        break;
    		}
+			 else
+			{	System.out.println("Booking Failed\t Next Customer\n");
+			 }
       }
 		}
  	}
@@ -39,11 +42,11 @@ public static int[] rooms={1,2,3,4,5,6,7,8,9,10};
 		boolean book=false;
 		while(true)
     {
-		System.out.println("Name : "+name+"\nPhone number : "+phn+"\nStay for "+stay_time+"hrs\nCost : "+cost+"\n\n\nHave the customer completed transaction ( 1 for YES and 0 for NO )  :  ");
+		System.out.print("\nName : "+name+"\nPhone number : "+phn+"\nStay for "+stay_time+"hrs\nCost : "+cost+"\n\n\nHave the customer completed transaction ( 1 for YES and 0 for NO )  :  ");
 		ck=s.nextInt();
 		if(ck==1) 
 		{ System.out.println("BOOKING SUCCESFULL");
-     --avai;
+     		--avai;
 		return true;
 		}
 		else if(ck==0)
@@ -53,8 +56,9 @@ public static int[] rooms={1,2,3,4,5,6,7,8,9,10};
 			continue;
 			}
 			else 
-			{System.out.println("BOOKING FAILED ! GET OUT OF THE HOTEL PAL !!!");
+			{ System.out.println("BOOKING FAILED ! GET OUT OF THE HOTEL PAL !!!");
 			return false;
+			 break;
 			}
 		}
 		else 
@@ -77,9 +81,10 @@ public class Hotel_service
 		{
 			if(hotel.avai>0)
 			{ obj[i]=new hotel();
+			 System.out.println("\n");
         obj[i].read();
 			}
 		}
 	}
 }
-//run time error checking is pending
+//slight excecution problems and invalid loop application is yet to be solved
