@@ -1,6 +1,6 @@
 # College Assignments Repository
 
-<img src="https://wallpapers.com/study-pictures" alt="Books and Study" width="100%" style="border-radius:10px; margin-bottom:20px;">
+<img src="https://wallpapers.com/study-pictures.jpg" alt="Books and Study" width="100%" style="border-radius:10px; margin-bottom:20px;">
 
 Welcome to the **College Assignments Repository**!  
 This repository contains all the assignments provided during college, organized for easy access and reference. Whether you are looking for past assignments, completed solutions, or resources to help with your studies, you will find them here.
