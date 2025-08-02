@@ -31,8 +31,8 @@ assignments
 │
     ├── Hotel_servie
     ├── Calculator
-    ├── TheNumber_guess_game.java
-    ├── 
+    ├── TheNumber_guess_game
+    ├── Game_of_Athletes
 
 ```
 
@@ -69,11 +69,11 @@ Feel free to contribute by:
 
 <img src="https://cdn.pixabay.com/photo/2014/04/03/11/53/phone-312142_1280.png" alt="Contact" width="90" align="left" style="margin-right: 20px; margin-bottom: 20px;">
 
-If you have suggestions, questions, or want to collaborate, please open an issue or contact the repository maintainer.
+If you have suggestions, questions, or want to collaborate, please open an issue or contact the me via mail or DM's.
 
 <div style="clear: both;"></div>
 
 ---
 
-<p align="center" style="font-size:1.2em;">Happy Studying! 🎓</p>
+<p align="center" style="font-size:1.2em;">Happy Coding !!! 🎓</p>
 <img src="https://cdn.pixabay.com/photo/2017/08/06/00/42/school-2580921_1280.png" alt="Graduation Cap" width="80" align="middle">
