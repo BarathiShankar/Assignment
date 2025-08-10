@@ -17,7 +17,7 @@ class GameAthlete
             if(opponent.energy<0)
                 opponent.isActive=false;
         }
-        else System.out.println("Opponent is faint due to low energy !");
+        else System.out.println("Opponent is faint due to low energy  !");
     }
     void rest(int amount)
     {
