@@ -18,7 +18,7 @@ This repository contains all the assignments provided during college, organized 
 
 
 ```
-assignments
+Assignments - 
 │
 ├── Sem 1
 │   ├── None
@@ -26,6 +26,7 @@ assignments
 ├── Sem 2
 │   ├── Run_time_quiz_competetion
     ├──Basic_Registration_site
+    ├── 
 
 ├── Sem 3
 │
@@ -33,6 +34,8 @@ assignments
     ├── Calculator
     ├── TheNumber_guess_game
     ├── Game_of_Athletes
+    ├── Battle_of-Heros
+    ├── 
 
 ```
 
