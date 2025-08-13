@@ -75,15 +75,39 @@ public class Battle_of_Heros
   {   
     Heros[] H=new Heros[2];
    Scanner s=new Scanner(System.in);
-   String name,u_name;
-   int atk;
+   String name,op_name;
+    outer:
+    while(true)
+    {
    for(int i=0;i<2;i++)
   {
     h[i].read();
   }
+      inner:
     while(true)
       {
         System.out.println("\n\nLET THE GAME BEGIN\n");
+        Heros.matches++;
+        System.out.println("Match number : "+Heros.matches+"\nEnter your hero name : ");
+        name=s.next();
+        System.out.print("Enter your opponent hero name : ");
+        op_name=s.next();
+        if(name.equals(op_name))
+        {
+          System.out.println("Unable to attack yourself my champ !";
+          continue ;
+        }
+        else if(name.equals(h[0].name) && op_name.equals(h[1].name))
+        {
+          h[0].attack(h[1]);
+        }
+        else if(name.equals(h[1].name) && op_name.equals(h[0].name))
+        {
+          h[1].attack(h[0]);
+        }
+        else
+          System.out.println("Invalid hero name entered , try again";
+      } 
       }
   }
 //STILL UNDER DEVELOPMENT
