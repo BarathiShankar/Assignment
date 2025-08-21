@@ -119,7 +119,7 @@ public class Game_of_Athletes
                     case 4:
                         A[pl - 1].displayStats();
                         break;
-                    case 5:System.out.println("Program terminated\n\nR.Barathi Shankar - 2024503063");
+                    case 5 : System.out.println("Game over !");
                         return;
                     case 6:
                         System.out.println("Restarting the game");
@@ -133,3 +133,4 @@ public class Game_of_Athletes
         }
     }
 }
+//Program completed 
