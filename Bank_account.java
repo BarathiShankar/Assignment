@@ -1,4 +1,4 @@
-//Program to impliment inheritencce login in bank account loigc
+//Program to impliment inheritence login in bank account logic
 import java.util.Scanner;
 class Bank
 {
@@ -46,7 +46,7 @@ class Savings extends Bank
     {
         System.out.print("Enter the current amount : ");
         s_amount=s.nextFloat();
-        System.out.println("Recieved amount");
+        System.out.println("Received amount");
     }
     @Override
     protected void print()
@@ -92,10 +92,10 @@ public class Bank_account
 {
     static
     {
-        System.out.println("-> This bank has a slot for 2 current and 2 savings account holder\n"+
+        System.out.println("\n-> This bank has a slot for 2 current and 2 savings account holder\n"+
                            "-> Current - able only to withdraw cash till the balance is null\n"+
                             "-> Savings - able only to deposit cash upto any limit\n"+
-                            "-> You can provide the savings and current amount ( deposit & withdrawing ) any time");
+                            "-> You can provide the savings and current amount ( deposit & withdrawing ) any time\n");
     }
     public static void main(String[] args)
     {
@@ -125,6 +125,7 @@ public class Bank_account
                 case 0 : System.out.println("Program terminated");
                         return;
                 case 1 : System.out.print("Enter the account number : ");
+                    s.nextLine();
                         acc=s.nextLine();
                         for(i=0;i<2;i++)
                         {
@@ -137,12 +138,13 @@ public class Bank_account
                         System.out.println("No savings account found");
                         check=false;
                         break;
-                case 2 ://Edit from here,put equals method and Also make acc inot methods as nextLine()
+                case 2 :
                         System.out.print("Enter the account number : ");
-                     acc=s.nextDouble();
+                    s.nextLine();
+                     acc=s.nextLine();
                      for(i=0;i<2;i++)
                      {
-                        if(cu[i].ac_no == acc)
+                        if(cu[i].ac_no.equals(acc))
                         {
                             check=true;
                             cu[i].withdraw();
@@ -154,10 +156,11 @@ public class Bank_account
                     break;
                 case 3 :
                         System.out.print("Enter the account number : ");
-                        acc=s.nextDouble();
+                    s.nextLine();
+                        acc=s.nextLine();
                         for(i=0;i<2;i++)
                         {
-                            if(sa[i].ac_no==acc)
+                            if(sa[i].ac_no.equals(acc))
                             {
                                 check=true;
                                 sa[i].print();
@@ -169,10 +172,11 @@ public class Bank_account
                         break;
                 case 4 :
                         System.out.print("Enter the account number : ");
-                        acc=s.nextDouble();
+                    s.nextLine();
+                        acc=s.nextLine();
                         for(i=0;i<2;i++)
                          {
-                            if(cu[i].ac_no==acc)
+                            if(cu[i].ac_no.equals(acc))
                             {
                              check=true;
                                 cu[i].print();
@@ -183,10 +187,11 @@ public class Bank_account
                         check=false;
                         break;
                 case 5 :System.out.print("Enter the account number : ");
-                    acc=s.nextDouble();
+                    s.nextLine();
+                    acc=s.nextLine();
                     for(i=0;i<2;i++)
                     {
-                        if(sa[i].ac_no == acc)
+                        if(sa[i].ac_no.equals(acc))
                         {
                             check=true;
                             sa[i].update();
@@ -197,10 +202,11 @@ public class Bank_account
                     check=false;
                     break;
                 case 6 : System.out.print("Enter the account number : ");
-                    acc=s.nextDouble();
+                    s.nextLine();
+                    acc=s.nextLine();
                     for(i=0;i<2;i++)
                     {
-                        if(cu[i].ac_no == acc)
+                        if(cu[i].ac_no.equals(acc))
                         {
                             check=true;
                             cu[i].update();
@@ -215,4 +221,4 @@ public class Bank_account
         }
     }
 }
-//UNDER DEVELOPMENT
+//COMPLETED
