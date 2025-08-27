@@ -1,37 +1,109 @@
-<!--First HTML program to create a basec HTML form site-->
+<!--First HTML program to create a basec HTML form for web page development-->
 <html>
-<head><title>REGISTRATION</title></head>
-<body text="red">
+<head>
+  <title>REGISTRATION</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
+    form {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #ff6ec7;
+      max-width: 500px;
+      margin: auto;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      color: #000;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    input[type="submit"], input[type="reset"] {
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff6ec7;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #ff1493;
+    }
+    marquee {
+      font-weight: bold;
+      color: yellow;
+      padding: 10px;
+      font-size: 18px;
+    }
+    h4 {
+      margin-top: 30px;
+      color: #00ffcc;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+    b {
+      display: block;
+      margin-top: 20px;
+      color: #ffccff;
+    }
+  </style>
+</head>
+<body>
 <form name="frm">
-Name : <input type="text" maxlength="18"><br><BR>
-Age : <input type="text" maxlength="2"><br><BR>
-Address : <textarea rows="5" cols="20">ENTER YOUR ADDRESS</textarea><br>
-Gender :
-<input type="radio" name="gen">MALE
-<input type="radio" name="gen">FEMALE
-<input type="radio" name="gen">OTHERS<br><br>
-Hobbies : <input type="checkbox" name="hob">read books<br>
-          <input type="checkbox" name="hob">football<br>
-          <input type="checkbox" name="hob">cricket<br>
-          <input type="checkbox" name="hob">TV<br>
-          <input type="checkbox" name="hob">gaming<br>
-          <input type="checkbox" name="hob">study<br>
-          <input type="checkbox" name="hob">gardening<br>
-     <br>
-State : <select name="dis">
-	<option>Tamil Nadu</option>
-<option>Kerala</option>
-<option>Andra Pradesh</option>
-<option>Karnataka</option>
-<option>Maharashtra</option>
-<option>Telengana</option>
-</select><br><br>
-Mail Address : <input type="text"><br><br>
-<a href="https://mail.google.com/"><input type="submit" value="SUBMIT">Click here to goto your mail website </a>
-<input type="reset" value="CLEAR">
+  Name : <input type="text" maxlength="18"><br><br>
+  Age : <input type="text" maxlength="2"><br><br>
+  Address : <textarea rows="5" cols="20">ENTER YOUR ADDRESS</textarea><br><br>
+  Gender :<br>
+  <input type="radio" name="gen">MALE
+  <input type="radio" name="gen">FEMALE
+  <input type="radio" name="gen">OTHERS<br><br>
+  Hobbies :<br>
+  <input type="checkbox" name="hob">read books<br>
+  <input type="checkbox" name="hob">football<br>
+  <input type="checkbox" name="hob">cricket<br>
+  <input type="checkbox" name="hob">TV<br>
+  <input type="checkbox" name="hob">gaming<br>
+  <input type="checkbox" name="hob">study<br>
+  <input type="checkbox" name="hob">gardening<br><br>
+  State : 
+  <select name="dis">
+    <option>Tamil Nadu</option>
+    <option>Kerala</option>
+    <option>Andra Pradesh</option>
+    <option>Karnataka</option>
+    <option>Maharashtra</option>
+    <option>Telengana</option>
+  </select><br><br>
+  Mail Address : <input type="text"><br><br>
+  <input type="submit" value="SUBMIT">
+  <input type="reset" value="CLEAR"><br><br>
+  <a href="https://mail.google.com/">Click here to go to your mail website</a>
 </form>
 <marquee bgcolor="green" height="5%">ALL THE VERY BEST</marquee><br><br>
-<b>For knowing about my proffessional profile,click here</b><A href="https://studaudvs.annauniv.edu/">CLICK HERE</A><!--Need to edit the linkl into new html site-->
-<h4 align="center">YOUR RESPONSE HAVE BEEN NOTED...W WILL BE RESPONDING BACK WITHIN 12 HRS</h4>
+<b>For knowing about my professional profile, click here</b>
+<A href="https://www.linkedin.com/in/barathishankar006/">CLICK HERE</A><!--Need to edit the link into new html site-->
+<h4 align="center">YOUR RESPONSE HAS BEEN NOTED... WE WILL BE RESPONDING BACK WITHIN 12 HRS</h4>
 </body>
- </html>
+</html>
+<!--Finalized the code-->
