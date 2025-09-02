@@ -36,10 +36,12 @@ Assignments -
     ├── Game_of_Athletes
     ├── Battle_of-Heros
     ├── Anagram
+    ├── Bank_account
+    ├── Vaccine
 
 ```
 
-- Each folder contains assignment files, solutions, and necessary resources.
+- Each file contains assignment programs, solutions, and necessary resources.
 
 ---
 
@@ -70,7 +72,7 @@ Feel free to contribute by:
 
 
 
-If you have suggestions, questions, or want to collaborate, please open an issue or contact the me via mail or DM's.
+If you have suggestions, questions, or want to collaborate, please open an issue or contact the me via mail - barathishankarr@gmail.com.
 
 <div style="clear: both;"></div>
 
